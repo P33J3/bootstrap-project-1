@@ -45,7 +45,8 @@
 						<a
 							role="button"
 							class="btn btn-lg btn-info text-nowrap"
-							id="reserveButton"
+							data-toggle="modal"
+							data-target="#reserveModal"
 							>Reserve Campsite</a
 						>
 					</div>
@@ -55,7 +56,7 @@
 		<div id="reserveModal" class="modal fade" role="dialog">
 			<div class="modal-dialog modal-lg" role="document">
 				<div class="modal-content">
-					<div class="modal-header">
+					<div class="modal-header bg-info text-white">
 						<h3 class="modal-title">Reserve a Campsite</h3>
 						<button type="button" class="close" data-dismiss="modal">
 							&times;
@@ -187,7 +188,7 @@
 						</li>
 					</ul>
 					<span class="navbar-text ml-auto">
-						<a role="button" id="loginButton">
+						<a role="button" data-toggle="modal" data-target="#loginModal">
 							<i class="fa fa-sign-in"></i> Login
 						</a>
 					</span>
